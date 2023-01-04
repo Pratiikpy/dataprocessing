@@ -25,19 +25,19 @@ This package contains several functions for preprocessing and evaluating machine
 To use this package, import the necessary functions and call them as follows:
 
 
-# Preprocess the input data
+1. Preprocess the input data
 X_preprocessed, y_balanced = dataprocessing.preprocess_data(X, y)
 
-# Train a model using hyperparameter tuning
+2. Train a model using hyperparameter tuning
 best_model = dataprocessing.train_model(X, y, hyperparameters=param_grid)
 
-# Compare the performance of multiple models
+3. Compare the performance of multiple models
 scores = dataprocessing.compare_models(models, X, y)
 
-# Make predictions using a trained model
+4. Make predictions using a trained model
 y_pred = dataprocessing.predict(best_model, X_test)
 
-# Evaluate the performance of a model
+5. Evaluate the performance of a model
 scores = dataprocessing.evaluate_model(best_model, X_test, y_test)
 
 # Licence
